@@ -5,7 +5,6 @@ import { AddTodo } from "./MyComponents/AddTodo";
 import { About } from "./MyComponents/About";
 import React, { useState, useEffect } from 'react';
 import {
-  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -58,7 +57,6 @@ function App() {
 
   return ( 
     <> 
-    <Router>
       <Header />
       <Switch>
           <Route exact path="/" render={()=>{
@@ -74,7 +72,6 @@ function App() {
           </Route> 
         </Switch> 
       <Footer />
-    </Router>
     </>
   );
 }
