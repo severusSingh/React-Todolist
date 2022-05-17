@@ -61,7 +61,7 @@ function App() {
     <Router>
       <Header />
       <Switch>
-          <Route exact path="/" render={()=>{
+          <Route exact path="React-Todolist/" render={()=>{
             return(
             <>
             <AddTodo addTodo={addTodo} />
