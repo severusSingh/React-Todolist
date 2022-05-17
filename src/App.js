@@ -5,7 +5,7 @@ import { AddTodo } from "./MyComponents/AddTodo";
 import { About } from "./MyComponents/About";
 import React, { useState, useEffect } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -61,7 +61,7 @@ function App() {
     <Router>
       <Header />
       <Switch>
-          <Route exact path="React-Todolist/" render={()=>{
+          <Route exact path="/" render={()=>{
             return(
             <>
             <AddTodo addTodo={addTodo} />
